@@ -1,0 +1,27 @@
+<!--
+<p>home works!</p>
+
+&lt;!&ndash;<input type="text" [(ngModel)]="texto" (keyup)="cambio()">
+
+
+{{texto}}&ndash;&gt;
+
+<input type="number" [(ngModel)]="numero1" > +
+
+<input type="number" [(ngModel)]="numero2" > =
+
+  {{numero1+numero2}}
+
+-->
+
+<div class="container-fluid">
+  <div class="container">
+    <app-card *ngFor="let iCard of listcards"
+              [id]="iCard.id"
+              [titulo]="iCard.nombre"
+              [descripcion]="iCard.texto"
+              [imagen]="iCard.imagen" (onComprar)="onComprar($event)"></app-card>
+  </div>
+
+
+</div>
